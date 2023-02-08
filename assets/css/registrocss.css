@@ -1,0 +1,12 @@
+.logo img {
+    height: 40px;
+    margin: 20px;
+}
+
+#fullname, #user, #email, #pass, #pass2, #weight, #birthday, #height, #activities {
+    width: 70%;   
+}
+
+/* input{
+    text-align: center;
+} */
