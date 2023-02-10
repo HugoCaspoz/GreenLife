@@ -34,9 +34,8 @@
           <div class="col-lg-2 col-md-6 footer-links">
             <h4>Explorar</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Rutas</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Ciudades</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="index.php">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="rutas.php">Rutas</a></li>
             </ul>
           </div>
 
@@ -44,7 +43,7 @@
             <h4>Perfil</h4>
             <ul>
               <li><i class="bx bx-chevron-right"></i> <a href="#">Mis rutas</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Editar Perfil</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="php/editar.php">Editar Perfil</a></li>
 
             </ul>
           </div>

@@ -1,8 +1,7 @@
-(function () {
+(function() {
   "use strict";
 
-
-  /* ciudades slider */
+  /* Ciudades descilantes */
   new Swiper('.ciudades-slider', {
     speed: 600,
     loop: true,
@@ -28,4 +27,10 @@
       }
     }
   });
-})
+
+  /**
+   * Initiate Pure Counter 
+   */
+  new PureCounter();
+
+})()

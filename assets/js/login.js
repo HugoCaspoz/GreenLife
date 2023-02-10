@@ -13,9 +13,10 @@ function loginCuenta(event){
 
     }
     console.log(usuario);
-
-    fetch(`http://localhost:5000/api/login`.document.querySelector('#formulario').value, {
-        method: 'GET',
+    localStorage.setItem ('token', token)
+    localStorage.setItem ('id', id)
+    fetch(`http://localhost:5000/api/login`, {
+        method: 'POST',
         headers: {
             'Content-Type': 'application/json',
             // 'Authorization': token,
@@ -34,10 +35,11 @@ function loginCuenta(event){
                 break;
             }
             return response.json();
+            
         })
 
         .then(data => {
         })
-
+        
 }
 

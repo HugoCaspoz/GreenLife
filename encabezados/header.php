@@ -27,8 +27,8 @@
     <nav id="navbar" class="navbar order-last order-lg-0">
       <ul>
         <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-        <li class="dropdown"><a href="rutas.php"><span>Rutas</span> <i class="bi bi-chevron-down"></i></a>
-          <ul>
+        <li class="dropdown"><a href="rutas.php"><span>Rutas</span> </a>
+          <!-- <ul>
             <li><a href="#">Ciudades</a></li>
             <li class="dropdown"><a href="#"><span>Actividades</span> <i class="bi bi-chevron-right"></i></a>
               <ul>
@@ -38,10 +38,11 @@
                 <li><a href="#">Correr</a></li>
               </ul>
             </li>
-          </ul>
+          </ul> -->
         </li>
         <li><a class="nav-link scrollto" href="php/login.php">Login</a></li>
         <li><a class="nav-link scrollto" href="php/register.php">Register</a></li>
+        <li><a class="nav-link scrollto" href="php/editar.php">Editar Perfil</a></li>
 
       </ul>
     </nav>

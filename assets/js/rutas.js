@@ -1,5 +1,5 @@
-document.querySelector('#distanciaMinimaboton.btn.btn-outline-success').addEventListener('click',distanciaMinima);
-document.querySelector('#distanciaMaximaboton').addEventListener('click',distanciaMaxima);
+document.getElementById('distanciaMinimaboton').addEventListener('click',distanciaMinima);
+document.getElementById('distanciaMaximaboton').addEventListener('click',distanciaMaxima);
 // document.querySelector('#buscarNombreboton').addEventListener('click',buscarNombre);
 
 let url = `http://localhost:5000/api/routes`;
@@ -48,7 +48,8 @@ function verRutas() {
 };
 //RUTAS DISTANCIA MINIMA
 function distanciaMinima(event) {
-    let distancia = document.getElementById('#distanciaMinima.form-control').value;
+    let distancia = document.getElementById('distanciaMinima');
+    console.log(distancia.value);
     event.preventDefault();
     url = `http://localhost:5000/api/route?min_dist=${{distancia}}`
     fetch(url, {
@@ -57,7 +58,6 @@ function distanciaMinima(event) {
             'Content-Type': 'application/json',
             // 'Authorization': token,
         },
-        body: JSON.stringify(usuario)
     })
         .then(response => response.json())
         .then(data => monstrarRutas(data))
@@ -99,7 +99,7 @@ function distanciaMinima(event) {
 
 //RUTAS DISTANCIA MAXIMA
 function distanciaMaxima(event) {
-    let distancia = document.getElementById('#distanciaMaxima.form-control').value;
+    let distancia = document.getElementById('distanciaMaxima').value;
     event.preventDefault();
     url = `http://localhost:5000/api/route?max_dist=${{distancia}}`
     fetch(url, {
@@ -108,7 +108,6 @@ function distanciaMaxima(event) {
             'Content-Type': 'application/json',
             // 'Authorization': token,
         },
-        body: JSON.stringify(usuario)
     })
         .then(response => response.json())
         .then(data => monstrarRutas(data))
